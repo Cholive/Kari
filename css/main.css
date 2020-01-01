@@ -194,7 +194,7 @@ blockquote {
 
 .projects {
   display: grid;
-  grid-gap: 10rem;
+  grid-gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
