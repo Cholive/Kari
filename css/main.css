@@ -135,7 +135,7 @@ h1 {
   color: orangered; }
 
 a {
-  color: #fff;
+  color: #3305b1;
   text-decoration: none; }
 
 header {
@@ -167,8 +167,7 @@ blockquote {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio'
- 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -194,7 +193,7 @@ blockquote {
 
 .projects {
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
@@ -205,58 +204,24 @@ blockquote {
       border-color: orangered;
       transition: all 0.5s ease-out; }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em; }
-  .container ul {
-    list-style: none;
-    padding: 0; }
-  .container .wrapper {
-    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
-  .container .wrapper > * {
-    padding: 1em; }
-  .container .my-info {
-    background: lightpink; }
-  .container .my-info h3,
-  .container .my-info ul {
-    font-weight: bold;
-    text-align: center;
-    margin: 0 0 1rem 0; }
-  .container .contact {
-    background: #f9feff; }
-
-.contact form {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr; }
-
-.contact form label {
-  display: block; }
-
-.contact form p {
-  margin: 0; }
-
-.contact form .full {
-  grid-column: 1 / 3; }
-
-.contact form button,
-.contact form input,
-.contact form textarea {
-  width: 100%;
-  padding: 1em;
-  resize: none; }
-
-.contact form button {
-  background: #c9e6ff;
-  border: 0;
-  text-transform: uppercase; }
-
-.contact form button:hover,
-.contact form button:focus {
-  background: orangered;
-  transition: background-color 2s;
-  transition: all 0.5s ease-out; }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #29a329;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: orangered;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -318,11 +283,7 @@ blockquote {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage'
- 'bio'
- 'job1'
- 'job2'
- 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
