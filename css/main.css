@@ -186,8 +186,12 @@ blockquote {
       text-decoration: underline; }
   .about-info .job-2 {
     grid-area: job2; }
+    .about-info .job-2 a {
+      text-decoration: underline; }
   .about-info .job-3 {
     grid-area: job3; }
+    .about-info .job-3 a {
+      text-decoration: underline; }
   .about-info .job {
     background: #f2b4e5;
     padding: 0.5rem;
